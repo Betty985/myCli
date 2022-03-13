@@ -2,8 +2,10 @@
   "name": "my-cli",
   "version": "1.0.0",
   "description": "a cli for creating projects",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "cli": "node  bin/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -15,11 +17,12 @@
   "author": "Betty",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.0",
     "commander": "^9.0.0",
     "download-git-repo": "^3.0.2",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.1",
-    "ora": "^6.1.0"
+    "ora": "^5.1.0",
+    "shelljs": "^0.8.5"
   }
 }
