@@ -15,7 +15,9 @@
   "author": "Betty",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.0.1",
     "commander": "^9.0.0",
-    "figlet": "^1.5.2"
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.1"
   }
 }

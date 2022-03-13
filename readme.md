@@ -4,9 +4,9 @@
 
 ## [figlet](https://www.npmjs.com/package/figlet):终端打印大型字符
 
-## chalk:美化终端字符显示
+## [chalk](https://www.npmjs.com/package/chalk):美化终端字符显示
 
-## inquirer:命令行参数交互输入
+## [inquirer](https://www.npmjs.com/package/inquirer):命令行参数交互输入
 
 ## shelljs:命令行操作
 
