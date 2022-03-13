@@ -18,7 +18,7 @@ async function run() {
     let data = await asyncFiglet("async");
     console.log(data);
   } catch (error) {
-    console.log(error);
+    console.log(data);
   }
 }
 run();
