@@ -2,7 +2,7 @@
 
 ## [commander](https://www.npmjs.com/package/commander):命令行插件
 
-## figlet:终端打印大型字符
+## [figlet](https://www.npmjs.com/package/figlet):终端打印大型字符
 
 ## chalk:美化终端字符显示
 
