@@ -1,5 +1,5 @@
 /**
- * 开发后台脚手架，快速生成后台vue架构
+ * 开发后台脚手架，快速生成架构
  */
 let { program } = require("commander");
 let { promisify } = require("util");
@@ -22,24 +22,25 @@ async function printLogo() {
 }
 program
   .command("create <app-name>")
-  .description("创建vue项目")
+  .description("创建vue或react项目")
   .action(async (name) => {
     await printLogo();
     log("准备创建项目.....");
     let answer = await inquirer.prompt([
       {
-        name: "language",
+        name: "type",
         type: "list",
-        message: "请选择语言版本",
-        choices: ["js", "ts"],
+        message: "请选择框架",
+        choices: ["vue", "react"],
       },
     ]);
-    if (answer.language == "js") {
+    if (answer.type == "vue") {
       // 下载
-      log("您选择了js");
-      init(name);
+      log("您选择了vue");
+      init(name,'vue');
     } else {
-      log("敬请期待");
+      log("您选择了react");
+      init(name,'react')
     }
   });
 // 参数解析
